@@ -1,3 +1,3 @@
 # About
 
-i don't know what i gonna do with this repo :v
+i don't know what i gonna do with this repository
