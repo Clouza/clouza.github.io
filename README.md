@@ -16,9 +16,11 @@ Check this [link](https://clouza.github.io)
 - Masonry
 - Get Waves
 - unDraw
+- Unsplash
 
 ## Other Things
-- Search is disabled until this portfolio online with hosting, because i need php and ajax to use it
+- Search and Contact is disabled until this portfolio online with hosting, because i need php and ajax to use it
+- About page will redirect to this github account, about page will added next time (￣o￣) . z Z
 - You can enable with remove disabled attribute
 ```html
 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" disabled>
