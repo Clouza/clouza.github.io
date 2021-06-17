@@ -139,10 +139,11 @@ nav {
 }
 
 .projects .card {
-    margin-bottom: 1em;
+    margin: 0 .1em 1em .1em;
 }
 
 .projects h1 {
+    text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 25px;
     color: white;
@@ -155,6 +156,7 @@ nav {
 }
 
 .contact h1 {
+    text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 25px;
     color: white;
@@ -225,6 +227,22 @@ nav {
     }
 
     /* end navbar */
+
+    .header-title {
+        font-size: 2em;
+    }
+
+    .projects h1 {
+        letter-spacing: normal;
+    }
+
+    .contact h1 {
+        letter-spacing: normal;
+    }
+
+    .pesan h1 {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 769px) {
