@@ -1,0 +1,285 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: #FFB4A2;
+}
+
+/* sidenavbar */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(263, 6%, 43%);
+    color: white;
+    height: 100vh;
+    width: 10em;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.navMenuHidden {
+    visibility: hidden;
+}
+
+.closeNav {
+    width: 4em;
+}
+
+.box-icon {
+    font-size: 1.8em;
+    margin-right: .8em;
+    transition-duration: .2s;
+}
+
+.box-icon-logo {
+    color: #6D6875;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.sidenavbar-link {
+    transition-delay: .1s;
+}
+
+.sidenavbar-title {
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+}
+
+.sidenavbar-title span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.sidenavbar-menu section {
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+    color: white;
+}
+
+.sidenavbar-menu section:hover {
+    background-color: hsl(263, 6%, 33%);
+}
+
+.sidenavbar-menu a {
+    display: block;
+    text-decoration: none;
+}
+
+.deep {
+    /* border: 5px solid red; */
+    width: 20em;
+    margin: 0 1.8em;
+    transform-origin: left;
+    transform: rotate(90deg);
+}
+
+/* end sidenavbar */
+
+.major {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.yatch {
+    position: relative;
+    /* border: 5px solid blue; */
+}
+
+.search {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#yatch {
+    position: absolute;
+    right: 10em;
+    top: 2em;
+    width: 15rem;
+}
+
+.utama {
+    /* width: 100%; */
+    /* position: absolute; */
+    /* z-index: 1; */
+    font-weight: normal;
+}
+
+.utama-background {
+    background-image: linear-gradient(#00B4D8, #0096C7, #0077B6, #023E8A, #03045E);
+}
+
+.header {
+    margin-bottom: 14em;
+    /* border: 5px solid red; */
+}
+
+.header-title {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+
+.header h4 {
+    color: white;
+}
+
+.projects {
+    /* border: 5px solid salmon; */
+    margin-bottom: 14em;
+}
+
+.projects .card {
+    margin-bottom: 1em;
+}
+
+.projects h1 {
+    font-weight: bold;
+    letter-spacing: 25px;
+    color: white;
+}
+
+.projects-menu a {
+    color: white;
+    margin: 1.8em 1em;
+    font-weight: 100;
+}
+
+.contact h1 {
+    font-weight: bold;
+    letter-spacing: 25px;
+    color: white;
+}
+
+.contact form {
+    color: white;
+    margin-top: 2em;
+}
+
+.pesan {
+    height: 100vh;
+    color: #023E8A;
+    user-select: none;
+}
+
+.pesan h1 {
+    font-size: 4.5em;
+}
+
+/* page 2 */
+/* .tentang {
+    border: 5px solid blue;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    right: 100vw;
+} */
+
+/* breakpoint */
+@media (max-width: 426px) {
+
+    /* navbar */
+    nav {
+        flex-direction: row;
+        width: 100vw;
+        height: initial;
+        bottom: 0;
+    }
+
+    .sidenavbar-title {
+        display: none;
+    }
+
+    .sidenavbar-menu {
+        display: flex;
+    }
+
+    .sidenavbar-menu a section span {
+        display: none;
+    }
+
+    .box-icon {
+        margin-right: 0;
+    }
+
+    .deep {
+        display: none;
+    }
+
+    /* end navbar */
+}
+
+@media (max-width: 769px) {
+
+    /* navbar */
+    nav {
+        flex-direction: row;
+        width: 100vw;
+        height: initial;
+        bottom: 0;
+    }
+
+    .sidenavbar-title {
+        display: none;
+    }
+
+    .sidenavbar-menu {
+        display: flex;
+    }
+
+    .sidenavbar-menu a section span {
+        display: none;
+    }
+
+    .box-icon {
+        margin-right: 0;
+    }
+
+    .deep {
+        display: none;
+    }
+
+    /* end navbar */
+    #yatch {
+        display: none;
+    }
+
+    .header .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1025px) {
+    #yatch {
+        right: 10em;
+        top: 0;
+        width: 8em;
+    }
+}
+
+@media (max-width: 1367px) {
+    #yatch {
+        right: 8em;
+        top: 1em;
+        width: 10em;
+    }
+}

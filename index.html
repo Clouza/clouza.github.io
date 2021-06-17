@@ -2,38 +2,384 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Clouza</title>
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Siwa">
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="Clouza, clouza, clouza portfolio, Clouza Portfolio, clouza Portfolio">
+
+    <title>Clouza | Portfolio 2021</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Clouza CSS -->
+    <link rel="stylesheet" href="css/clouza.css">
 </head>
 
 <body>
 
+    <!-- navbar -->
+    <nav class="fixed-left closeNav">
+        <div class="sidenavbar-title">
+            <i class='bx bx-menu box-icon box-icon-logo' id="menuBtn"></i>
+            <span class="sidenavbar-link navMenuHidden">Clouza</span>
+        </div>
+        <div class="sidenavbar-menu">
+            <a href="#header">
+                <section>
+                    <i class='bx bxs-dashboard box-icon box-icon-logo'></i>
+                    <span class="sidenavbar-link navMenuHidden">Home</span>
+                </section>
+            </a>
+            <a href="#projects">
+                <section>
+                    <i class='bx bxs-bookmarks box-icon box-icon-logo'></i>
+                    <span class="sidenavbar-link navMenuHidden">Projects</span>
+                </section>
+            </a>
+            <a href="#contact">
+                <section>
+                    <i class='bx bxs-envelope box-icon box-icon-logo'></i>
+                    <span class="sidenavbar-link navMenuHidden">Contact</span>
+                </section>
+            </a>
+            <a href="https://github.com/clouza" target="_blank">
+                <section>
+                    <i class='bx bxs-user box-icon box-icon-logo'></i>
+                    <span class="sidenavbar-link navMenuHidden">About</span>
+                </section>
+            </a>
+            <div class="deep">
+                <input id="hitung" type="range" class="form-range" value="" min="0" max="344" disabled>
+                <label for="hitung" id="hitungAngka">0 m</label>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
 
-  <!-- particles.js container -->
-  <div id="particles-js">
-    <h5>What you looking for? <br /> there is only void just like my
-      <span> heart.</span>
-    </h5>
+    <!-- main -->
+    <div class="major">
 
-    <!-- <h5>I like
-      <span>g <br />
-        a<br />
-        n<br />
-        y<br />
-        <h6>
-          u
-        </h6>
-      </span>
-    </h5> -->
-  </div>
+        <!-- home -->
+        <div class="utama" id="utama">
+            <!-- yatch -->
+            <div class="yatch">
+                <img src="assets/svg/yatch.svg" alt="yatch" id="yatch">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#00B4D8" fill-opacity="1"
+                        d="M0,128L60,133.3C120,139,240,149,360,149.3C480,149,600,139,720,122.7C840,107,960,85,1080,80C1200,75,1320,85,1380,90.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
 
-  <!-- scripts -->
-  <script src="particles.js"></script>
-  <script src="js/app.js"></script>
+                <!-- search -->
+                <form class="d-flex search" method="post">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" disabled>
+                    <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <!-- end yatch -->
 
+            <div class="container-fluid utama-background">
+
+                <div class="container">
+
+                    <!-- header -->
+                    <div class="header p-5 pt-5" id="header">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <h1 class="header-title" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                    Clouza Portfolio</h1>
+                                <!-- <a href="#tentang" id="utamaHref">Tentang Clouza</a> -->
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row flex-column">
+                                    <div class="col">
+                                        <h4 data-aos="fade-up" data-aos-once="true" data-aos-once="true">Favorite
+                                            Projects</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-center">
+
+                                            <div class="col" data-aos="fade-up" data-aos-once="true"
+                                                data-aos-once="true">
+                                                <div class="card mb-3 p-2">
+                                                    <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                                        class="img-fluid rounded" alt="project1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Bank Sampah</h5>
+                                                        <p class="card-text">
+                                                            Bank sampah adalah suatu tempat yang digunakan untuk
+                                                            mengumpulkan sampah yang sudah dipilah-pilah Hasil dari
+                                                            pengumpulan sampah yang sudah dipilah akan disetorkan ke
+                                                            tempat pembuatan kerajinan dari sampah atau ke tempat
+                                                            pengepul sampah.
+                                                        </p>
+                                                        <a href="https://github.com/Clouza/BankSampah-beta"
+                                                            target="_blank" class="btn btn-primary"><i
+                                                                class="bi bi-github"></i>
+                                                            Github</a>
+                                                        <a href="https://banksampah.lumonata.com/"
+                                                            class="btn btn-primary" target="_blank"><i
+                                                                class="bi bi-globe2"></i>
+                                                            Demo</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col" data-aos="fade-up" data-aos-once="true"
+                                                data-aos-once="true">
+                                                <div class="card mb-3 p-2">
+                                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                                        class="img-fluid rounded" alt="project1">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Project Example</h5>
+                                                        <p class="card-text">
+                                                            Some quick example text to build on the Project Example
+                                                            and
+                                                            make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                                            Github</a>
+                                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                                            Demo</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end header -->
+
+                    <!-- projects -->
+                    <div class="projects pt-5 px-5" id="projects">
+                        <div class="row">
+                            <h1 class="text-center text-uppercase fs-1" data-aos="fade-up" data-aos-once="true"
+                                data-aos-once="true">
+                                Projects</h1>
+                        </div>
+                        <div class="projects-menu d-flex justify-content-center" data-aos="fade-up" data-aos-once="true"
+                            data-aos-once="true">
+                            <a href="">All</a>
+                            <a href="">Github Project</a>
+                            <a href="">Simple Project</a>
+                        </div>
+                        <div class="row projects-list" data-masonry='{"percentPosition": true }'>
+
+                            <div class="col-md-4">
+                                <div class="card mb-3 p-2" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                    <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bank Sampah</h5>
+                                        <p class="card-text">
+                                            Bank sampah adalah suatu tempat yang digunakan untuk
+                                            mengumpulkan sampah yang sudah dipilah-pilah Hasil dari
+                                            pengumpulan sampah yang sudah dipilah akan disetorkan ke
+                                            tempat pembuatan kerajinan dari sampah atau ke tempat
+                                            pengepul sampah.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="https://banksampah.lumonata.com" target="_blank"
+                                            class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                <div class="card mb-3 p-2">
+                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Example</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the Project Example
+                                            and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                <div class="card mb-3 p-2">
+                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Example</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the Project Example
+                                            and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                <div class="card mb-3 p-2">
+                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Example</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the Project Example
+                                            and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                <div class="card mb-3 p-2">
+                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Example</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the Project Example
+                                            and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                <div class="card mb-3 p-2">
+                                    <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                        class="img-fluid rounded" alt="project1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Example</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the Project Example
+                                            and
+                                            make up the bulk of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-github"></i>
+                                            Github</a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-globe2"></i>
+                                            Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end projects -->
+
+                    <!-- contact -->
+                    <div class="contact pt-5" id="contact">
+                        <div class="row">
+                            <h1 class="text-center text-uppercase fs-1" data-aos="fade-up" data-aos-once="true"
+                                data-aos-once="true">Contact</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <form>
+                                    <div class="mb-3" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                        <label for="emaiil" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Youremail@mail.com"
+                                            id="emaiil" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                        <label for="nama" class="form-label">Name</label>
+                                        <input type="text" class="form-control" placeholder="Yourname" id="nama">
+                                    </div>
+                                    <div class="mb-3" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
+                                        <label for="floatingTextarea2">Message</label>
+                                        <textarea class="form-control" placeholder="Leave a message here"
+                                            id="floatingTextarea2" style="height: 100px"></textarea>
+                                    </div>
+
+                                    <button type="button" class="btn btn-custom" data-aos="fade-up" data-aos-once="true"
+                                        data-aos-once="true" onclick="alert('Message sent!')">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end contact -->
+
+                    <!-- pesan -->
+                    <div class="pesan d-flex">
+                        <h1 class="text-center m-auto" data-aos="zoom-in" data-aos-once="true" data-aos-duration="3000">
+                            what creature is waiting for you?
+                        </h1>
+                    </div>
+                    <!-- end pesan -->
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end home -->
+
+        <!-- about -->
+        <!-- <div class="tentang" id="tentang">
+            <div class="container">
+                <a href="#utama" id="tentangHref">Halaman Utama</a>
+            </div>
+        </div> -->
+        <!-- end about -->
+    </div>
+    <!-- end main -->
+
+
+    <!-- JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <!-- Masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- AOS Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Clouza Js-->
+    <script src="js/clouza.js"></script>
 </body>
 
 </html>
